@@ -2,8 +2,8 @@
 
 Boba Tech 的活動交流媒合 Demo：讓參加者知道適合認識誰、理由與第一句話。
 
-- Demo: https://boba-connect.misty-gecko-0456.chatgpt.site
-- 技術與資料說明: https://boba-connect.misty-gecko-0456.chatgpt.site/architecture
+- Demo: https://boba-connect.stan954054.chatgpt.site
+- 技術與資料說明: https://boba-connect.stan954054.chatgpt.site/architecture
 - BUILDMODE 2026 / AI Agents & Automation / T066
 
 ## 功能
@@ -43,7 +43,11 @@ React + Vinext / Cloudflare Workers。即時流程：結構化需求理解 → O
 
 ## 既有成果揭露
 
-Boba Tech 既有專案已包含報名、名錄、人物頁、規則式推薦及本機 AI 搜尋／媒合實驗。本 repo 是 2026-09-06 為黑客松製作的獨立公開 Demo，沿用該產品背景、設計色彩與媒合方法，新增雙欄展示、公開匿名資料、預先結果、自填即時 API 流程、引用驗證與部署。正式會員整合尚未完成，不能將既有平台全部算成本次新作。
+Boba Connect 是為 Boba Tech 活動交流需求開發的獨立 AI 媒合模組，目標是讓參加者在活動前知道適合認識誰、為什麼，以及如何開始交流。本次以可獨立操作的公開 Demo 呈現，後續預計整合至 Boba Tech 的會員平台。
+
+本次於 2026-09-06 為黑客松新增的實作包含雙欄互動展示、公開匿名化摘要與預先媒合結果、自填背景與需求的即時 API 流程、引用驗證，以及獨立部署。產品背景、設計色彩與媒合方法承接 Boba Tech 的既有探索；先前已有本機 AI 搜尋／媒合實驗。本次將這些探索發展為可公開試用的獨立模組。
+
+Boba Tech 原有的報名、名錄、人物頁與規則式推薦提供後續整合場景，屬於既有平台功能，不列入本次新增開發範圍。正式會員整合尚未完成。
 
 ## License
 
