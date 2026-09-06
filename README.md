@@ -3,7 +3,7 @@
 Boba Tech 的活動交流媒合 Demo：讓參加者知道適合認識誰、理由與第一句話。
 
 - Demo: https://boba-connect.stan954054.chatgpt.site
-- 技術與資料說明: https://boba-connect.stan954054.chatgpt.site/architecture
+- 技術與資料說明: [完整技術文件](https://github.com/stantheman0128/boba-connect-demo/blob/main/docs/TECHNICAL.md)
 - BUILDMODE 2026 / AI Agents & Automation / T066
 
 ## 功能
