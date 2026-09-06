@@ -49,7 +49,7 @@ export async function POST(request:Request){
     let raw=await jsonCall(key,model,JUDGE_PROMPT,packet,decisionSchema(candidates.length),deadline);calls++;
     let checked:Decision[];
     try{checked=validateDecisions(raw.decisions,candidates);}catch{repairs++;raw=await jsonCall(key,model,JUDGE_PROMPT+' The previous output failed exact citation or candidate coverage checks. Return a corrected complete batch.',{...packet,previous:raw},decisionSchema(candidates.length),deadline);calls++;checked=validateDecisions(raw.decisions,candidates);}
-    done+=batch.length;send('checked',{step:3,done,total:routes.length,accepted:checked.filter(d=>d.fit!=='none').length});return checked;
+    done+=batch.length;send('checked',{step:3,done,total:routes.length,accepted:checked.filter(d=>d.fit!=='none').length,decisions:checked.map(d=>({id:d.id,name:people.find(p=>p.id===d.id)!.name,fit:d.fit,why:d.why,gap:d.gap}))});return checked;
    }))).flat();
    send('stage',{step:4,title:'整理你的交流起點',detail:'引用已通過逐字檢查，彙整推薦理由、開場問題與待確認事項。'});
    const matches=rankCandidates(assessments).map(d=>({...d,person:people.find(p=>p.id===d.id),score:undefined}));
